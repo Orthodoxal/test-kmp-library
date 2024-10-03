@@ -6,7 +6,6 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.maven.publish)
-    //id("module.publication")
 }
 
 kotlin {
@@ -56,7 +55,7 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.orthodoxal",
         artifactId = "test-library",
-        version = "0.0.1"
+        version = "0.0.2"
     )
 
     pom {
