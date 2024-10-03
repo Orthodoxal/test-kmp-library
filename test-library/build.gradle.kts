@@ -52,10 +52,12 @@ android {
 }
 
 mavenPublishing {
+    val version: String by project
+
     coordinates(
         groupId = "io.github.orthodoxal",
         artifactId = "test-library",
-        version = "0.0.2"
+        version = version,
     )
 
     pom {
