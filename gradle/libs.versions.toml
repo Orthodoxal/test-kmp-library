@@ -1,7 +1,8 @@
 [versions]
 agp = "8.5.0"
-kotlin = "2.0.0"
+kotlin = "2.0.20"
 nexus-publish = "2.0.0"
+maven-publish = "0.28.0"
 android-minSdk = "24"
 android-compileSdk = "34"
 
@@ -12,3 +13,4 @@ nexus-publish = { module = "io.github.gradle-nexus.publish-plugin:io.github.grad
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
